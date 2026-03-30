@@ -1,0 +1,124 @@
+table,
+p {
+    text-align: justify;
+}
+
+.judul {
+	background-color: #00ffff;
+	text-align: center;
+	padding: 0px 0;
+	font-size: inherit;
+	margin: 0 0 16px 0;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.pembukaan {
+    background-color: #0000ff;
+    color: white;
+	text-align: center;
+	padding: 0px 0;
+	font-size: inherit;
+	margin: 0 0 16px 0;
+}
+
+.p\.one {
+	background-color: #31d931;
+	font-size: inherit;
+}
+
+.p\.two {
+	background-color:#00ff00;
+	font-size: inherit;
+}
+.p\.three {
+	background-color:#00ff00;
+	font-size: inherit;
+}
+.p\.four {
+	background-color:#00ff00;
+	font-size: inherit;
+}
+.p\.five {
+	color:#1f1fff;
+	font-size: inherit;
+}
+.border {
+	border: 2px solid red;
+	padding: 6px;
+	box-sizing: border-box;
+	font-size: inherit;
+}
+
+p.one {
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+}
+
+
+.angka td b {
+	color: #ff0000;
+}
+
+
+a:hover {
+	color: #ff0000;
+}
+
+.pancasilaa {
+    background-color: #00ffff;
+    color: black;
+    text-align: center;
+    padding: 0px 0;
+    font-size: inherit;
+    margin: 0 0 16px 0;
+}
+
+.pancasila li {
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+	.pancasila li span {
+		background-color: #ffff00;
+		color: #000000;
+		font-style: italic;
+		font-weight: bold;
+        
+		display: inline-block;
+		padding: 0 6px;
+		border-radius: 2px;
+		text-decoration: underline;
+	}
+
+
+.pancasila-title {
+	display: inline-block;
+	background-color: #00ffff;
+    text-align: center;
+	padding: 0 6px;
+	font-weight: bold;
+	border-radius: 2px;
+}
+
+
+.pancasila-heading {
+	text-align: center;
+}
+
+
+.indonesia-1 {
+	background-color: #ffff00;
+	padding: 0 2px;
+}
+
+
+.indonesia-2 {
+	background-color: #ffff00;
+	padding: 0 2px;
+}
