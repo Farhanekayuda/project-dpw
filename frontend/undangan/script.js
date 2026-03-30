@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    // 1. Fungsi Tombol Buka Undangan (Menghilangkan lock scroll dan geser ke bawah)
+    // Untuk Fungsi Tombol Buka Undangan (Menghilangkan lock scroll dan geser ke bawah)
     const btnBuka = document.getElementById("btn-buka");
     if(btnBuka) {
         btnBuka.addEventListener("click", function() {
-            // Hilangkan class 'locked-scroll' agar halaman bisa di-scroll
+            // Seting untuk Hilangkan class 'locked-scroll' agar halaman bisa di-scroll
             document.body.classList.remove("locked-scroll");
             
             // Scroll otomatis ke section pengantar dengan mulus
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // 2. Efek Animasi Fade-in Saat Layar Di-scroll
+    // Bagian Efek Animasi Fade-in Saat Layar Di-scroll
     const observerOptions = {
         root: null,
         rootMargin: "0px",
@@ -30,29 +30,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }, observerOptions);
 
-    // Terapkan ke semua elemen dengan class fade-in
+    // Setinggan Terapkan ke semua elemen dengan class fade-in
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(el => observer.observe(el));
 
-    // 3. Form RSVP Submit Animasi
+    // Bagian Form RSVP Submit Animasi
     const formRsvp = document.getElementById("form-rsvp");
     if(formRsvp) {
         formRsvp.addEventListener("submit", function(e) {
             e.preventDefault(); // Mencegah browser memuat ulang halaman
             
-            // Mengubah tombol menjadi status loading
+            // Bagian Mengubah tombol menjadi status loading
             const btn = this.querySelector('.btn-submit');
             const originalText = btn.textContent;
             
             btn.textContent = "Mengirim...";
             btn.style.background = "#8a6a6a";
             
-            // Simulasi jeda pengiriman data selama 1.5 detik
+            // Bagian Simulasi jeda pengiriman data selama 1.5 detik
             setTimeout(() => {
                 btn.textContent = "Berhasil Terkirim ✓";
                 btn.style.background = "#6b8a3a"; // Berubah warna hijau
                 
-                // Reset form kembali seperti semula setelah 3 detik
+                // Bagian Reset form kembali seperti semula setelah 3 detik
                 setTimeout(() => {
                     formRsvp.reset();
                     btn.textContent = originalText;

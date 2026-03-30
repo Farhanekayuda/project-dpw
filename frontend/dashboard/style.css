@@ -117,7 +117,7 @@ body {
   display: none;
 }
 
-/* ========== ADMIN LAYOUT ========== */
+/* Settingan Admin Layout */
 #admin-page { display: none; }
 
 .admin-wrapper {
@@ -126,7 +126,7 @@ body {
   position: relative;
 }
 
-/* SIDEBAR */
+/* Bagian SideBar */
 .sidebar {
   width: 280px;
   min-width: 280px;

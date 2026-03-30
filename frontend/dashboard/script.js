@@ -1,4 +1,4 @@
-// ---- Countdown ----
+// Bagian Coundown
 function updateCountdown() {
   const eventDate = new Date('2031-03-17');
   const today = new Date();
@@ -8,7 +8,7 @@ function updateCountdown() {
 }
 updateCountdown();
 
-// ---- Login ----
+// Bagian Login
 function doLogin() {
   const name = document.getElementById('login-name').value;
   const pass = document.getElementById('login-pass').value;
@@ -29,7 +29,7 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-// ---- Mobile Sidebar Toggle ----
+// Bagian Mobile Sidebar Toggle 
 function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   const overlay = document.getElementById('sidebar-overlay');
@@ -37,27 +37,27 @@ function toggleSidebar() {
   overlay.classList.toggle('show');
 }
 
-// ---- Page Navigation ----
+// Bagian Page Navigation 
 function showPage(page) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   document.getElementById('page-' + page).classList.add('active');
   document.getElementById('nav-' + page).classList.add('active');
   
-  // Auto-close sidebar on mobile after clicking a link
+  // Bagian Auto-close sidebar pada mobile setelah mengklik link
   if (window.innerWidth <= 768) {
     document.getElementById('sidebar').classList.remove('open');
     document.getElementById('sidebar-overlay').classList.remove('show');
   }
 }
 
-// ---- Copy Link ----
+// Bagian Copy Link
 function copyLink() {
   navigator.clipboard.writeText('https://farhan-selvia/undangan.site').catch(() => {});
   showToast('Link berhasil disalin!');
 }
 
-// ---- Toast ----
+// Bagian Toast 
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
